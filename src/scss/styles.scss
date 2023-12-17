@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+  }
+  
+  
+  @font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Segoe UI Italic.woff') format('woff');
+  }
+  
+  
+  @font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe UI Bold.woff') format('woff');
+  }
+  
+  
+  @font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Segoe UI Bold Italic.woff') format('woff');
+  }
+  * {
+    margin:0;
+    zoom: 95%;
+  }
+  body {
+    font-family:'Segoe UI';
+    background: #E7F3F9 0% 0% no-repeat padding-box;
+  }
+  header {
+    height: 80px;
+    display: flex;
+    padding: 24px 0 29px 0;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    .logo-holder {
+        flex: .11;
+        display: flex;
+        justify-content: center;
+        border-right: 1px solid lightgray;
+        margin: 0 20px;
+        padding: 0 10px;
+        img {
+            width: 104px;
+        }
+    }
+    h2 {
+        font: normal normal normal 24px/32px Segoe UI;
+        padding: 0 32px;
+    }
+    nav {
+        flex: .77;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                font: normal normal normal 20px/27px Segoe UI;
+                a {
+                    text-decoration: none;
+                    display: inline-block;
+                    color: #192365;
+                    padding: 0px 20px;
+                    height: 34px;
+                }
+                &.active {
+                    a {
+                        color: #0BC1CF;
+                        font: normal normal 600 20px/27px Segoe UI;
+                        border-left: 1px solid lightgray;
+                    }
+  
+                }
+            }
+        }
+    }
+    .notification {
+        padding: 0 20px;
+        border-right: 1px solid lightgray;
+        img {
+            width: 27px;
+           
+        }
+    }
+    .user {
+        display: flex;
+        padding: 0 20px 0 40px;
+        justify-content: flex-end;
+        flex: 0.15;
+        .details {
+            display: flex;
+            flex-direction: column;
+            color: #192365;
+            .name {
+                font: normal normal normal 18px/24px Segoe UI;
+            }
+            .des {
+                font: normal normal normal 12px/16px Segoe UI;
+                opacity: 0.8;
+            }
+        }
+        .info{
+            padding: 0 20px;
+            img {
+                width: 40px;
+            }    
+        }
+    }
+  }
+  
+  main {
+    margin: 0 40px;
+    align-items: center;
+    .heading {
+        h1 {
+            font: normal normal 600 32px/43px Segoe UI;
+            color: #192365;
+            padding: 30px 0;
+        }
+        nav {
+            flex: .77;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    font: normal normal normal 18px/24px Segoe UI;
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        color: #192365;
+                        margin: 20px 76px;
+                        height: 34px;
+                    }
+                    &.active {
+                        border-radius: 8px 0px 0px 0px;
+                        background: #0BC1CF 0% 0% no-repeat padding-box;
+                        a {
+                            color: #FFFFFF;
+                            font: normal normal 600 20px/27px Segoe UI;
+                            
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        display: flex;
+        flex-direction: column;
+        .alert {
+            margin: 10px 10px 0 10px;
+            border-radius: 4px;
+            display: flex;
+            .msg {
+                font: normal normal normal 16px/21px Segoe UI;
+                color: #0DBA7F;
+                opacity: 1;
+                flex: 1;
+            }
+            .close {
+                width: 18px;
+                border-radius: 1px;
+                text-decoration: none;
+                color: #0DBA7F;
+                cursor: pointer;
+            }
+        }
+        .success {
+            background: rgb(0 151 19 / 13%) 0% 0% no-repeat padding-box
+        }
+        form {
+            height:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            flex-direction: column;
+            .row {
+                display:flex;
+                flex-direction:row;
+                .form-group {
+                    flex:1;
+                    display:flex;
+                    flex-direction:column;
+                    margin: 10px 5px;
+                    label {
+                        text-align: left;
+                        font: normal normal normal 16px/21px Segoe UI;
+                        color: #192365;
+                        padding: 10px;
+                    }
+                    input, select {
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        border: 1px solid #192365;
+                        border-radius: 4px;
+                        opacity: 0.5;
+                        width: 400px;
+                        height: 42px;
+                        margin: 10px;
+                        padding: 10px;
+                    }
+                }
+                .form-button {
+                    flex:1;
+                    display:flex;
+                    flex-direction:row;
+                    margin: 10px 5px;
+                    button {
+                        border-radius: 16px;
+                        opacity: 0.3;
+                        width: 260px;
+                        height: 60px;
+                        margin: 20px;
+                    }
+                    .reset {
+                        background: rgb(25, 35, 101, .03) 0% 0% no-repeat padding-box;
+                        font: normal normal normal 24px/32px Segoe UI;
+                        letter-spacing: 0px;
+                        color: #192365;
+                    }
+                    .submit {
+                        background: #0BC1CF 0% 0% no-repeat padding-box;
+                        font: normal normal 600 24px/32px Segoe UI;
+                        letter-spacing: 0px;
+                        color: #FFFFFF;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+  }
